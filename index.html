@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  
+  <title>Receipt Submission Test</title>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <div class="navbar-header">
+        <a class="navbar-brand" href="#">Receipt Submission</a>
+        </div>
+      </div>
+  </nav>
+  
+  <div class="container">
+
+    <div class="box">
+      <h2 class="text-left">Please complete the following form to submit a receipt</h2>
+    </div>
+
+    <div class="input-form">
+      <form class="needs-validation">
+        <div class="form-group">
+
+          <label for="inputFirstName">First Name</label>
+          <input type="text" class="form-control is-valid" id="inputFirstName" placeholder="First Name" required>
+
+          <label for="inputLastName">Last Name</label>
+          <input type="text" class="form-control is-valid" id="inputLastName" placeholder="Last Name" required>
+          
+          <label for="buildingSelect">Building</label>
+          <select class="form-control is-valid" id="buildingSelect" required>
+            <option>Acacia Hall</option>
+            <option>Ironwood Hall</option>
+            <option>Juniper Hall</option>
+            <option>Willow Hall</option>
+          </select>
+
+          <label for="inputEventName">Event Name</label>
+          <input type="text" class="form-control is-valid" id="inputEventName" placeholder="Event Name" required>
+
+          <label for="inputEventDescription">Event Description</label>
+          <input type="text" class="form-control is-valid" id="inputEventDescription" placeholder="Event Description" required>
+
+          <label for="inputAttendance">Number of Attendees</label>
+          <input type="number" class="form-control is-valid" id="inputAttendance" placeholder="Number of Attendees" required>
+
+          <label for="inputAttendees">List Attendees (if less than 10)</label>
+          <input type="text" class="form-control is-valid" id="inputAttendees" placeholder="Name of Attendees">
+          
+          <label for="inputVendor">Vendor</label>
+          <input type="text" class="form-control is-valid" id="inputVendor" placeholder="Vendor Name" required>
+
+          <label for="inputAmount">Amount</label> 
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">$</span>
+            </div>
+            <input type="number" class="form-control is-valid" id="inputAmount" min="0" step="0.01" placeholder="$0.00" required>
+          </div>
+
+          <label for="uploadReceipt">Upload Receipt</label> 
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="customFile">
+            <label class="custom-file-label" for="customFile">Choose Receipt</label>
+          </div>
+
+          <label for="uploadReceipt">Upload Receipt</label> 
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+          <div class="input-group">
+              <label class="input-group-btn">
+                  <span class="btn btn-primary">
+                      Browse&hellip; <input id="my-file-selector" type="file" style="display:none;" onchange="$('#upload-file-info').val($(this).val());">
+                  </span>
+              </label>
+              <input type="text" class="form-control" id="upload-file-info" readonly>
+          </div>
+        
+        </div>
+        <div class="">
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+  <div class="footer text-center">
+    <h4>Created by Kris Hayes</h4>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+
